@@ -1,6 +1,6 @@
 # PTEase: Objective Airway Examination for Pulmonary Telemedicine using Commodity Smartphones
 ## Introduction
-PTEase is a new smartphone-based sensing system designed to examine human airway's internal physiological conditions. PTEase uses active acoustic sensing to measure the internal changes of lower airway caliber, and then leverages machine learning to analyze the sensory data for pulmonary disease evaluation.
+PTEase is a new smartphone-based sensing system designed to examine human airway's internal physiological conditions. PTEase uses active acoustic sensing to measure the internal changes of airway caliber, and then leverages machine learning to analyze the sensory data for pulmonary disease evaluation.
 ## Documentation
 ```
 docs
