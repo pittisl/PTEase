@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">AWARE</string>
+    <string name="action_settings">Settings</string>
+    <string name="welcome">Welcome to AWARE</string>
+    <string name="button_off">START</string>
+    <string name="button_on">STOP &amp; DISCARD</string>
+    <string name="save_button">SAVE</string>
+    <string name="results_button">RESULTS</string>
+    <string name="cali_button">CALIBRATION</string>
+    <string name="upload_button">UPLOAD</string>
+    <string name="delete_button">DELETE</string>
+    <string name="need_permissions">You must grant permissions in order to make this App work</string>
+    <string name="record_file_name">AudioRecord</string>
+    <string-array name="trial_instructions">
+        <item>"Follow the steps below:\n\n1. Do normal tidal breathing through NOSE.\n2. Do slow deep breathing through MOUTH.\n\nPress START when ready"</item>
+        <item>BREATHE THROUGH NOSE</item>
+        <item>BREATHE THROUGH MOUTH\n\nBreath in for 5s -> breath out for 5s\nRepeat 3 time\n\nPress START when ready</item>
+        <item>BREATHE IN</item>
+        <item>BREATHE OUT</item>
+        <item>Finished\nChecking data quality…</item>
+        <item>Discarded</item>
+    </string-array>
+    <string-array name="ethnicity_array">
+        <item>unknown</item>
+        <item>American Indian or Alaska Native</item>
+        <item>Asian</item>
+        <item>Black or African American</item>
+        <item>Hispanic or Latino</item>
+        <item>Native Hawaiian or Other Pacific Islander</item>
+        <item>White</item>
+        <item>Others</item>
+    </string-array>
+    <string-array name="fc_array">
+        <item>3000</item>
+        <item>3500</item>
+        <item>4000</item>
+        <item>4500</item>
+        <item>5000</item>
+        <item>5500</item>
+        <item>6000</item>
+    </string-array>
+    <string-array name="graph_array">
+        <item>Nasal</item>
+        <item>Inhale</item>
+        <item>Exhale</item>
+    </string-array>
+    <string-array name="height_array">
+        <item>ft/in</item>
+        <item>cm</item>
+    </string-array>
+    <string-array name="weight_array">
+        <item>lbs</item>
+        <item>kg</item>
+    </string-array>
+    <string-array name="cali_instructions">
+        <item>1. Connect the tube to your phone using adapter.\nBlock tube outlet with hand.\nPress START</item>
+        <item>2. Remove your hand.\nMake sure the tube outlet is in a quite open space.\nPress START</item>
+        <item>Congratulations!\nCalibration has been finished.</item>
+    </string-array>
+    <string-array name="precali_instructions">
+        <item>Connect a long tube to your phone using adapter.\n\nPress START</item>
+        <item>Congratulations!\nCalibration has been finished.</item>
+    </string-array>
+    <string name="blank">&lt;blank&gt;</string>
+</resources>

@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:windowBackground"
+    tools:context=".ui.upload.UploadFragment">
+
+    <TextView
+        android:id="@+id/info_header"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="70dp"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:text="Subject Information"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/info_name_header"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="126dp"
+        android:layout_marginEnd="154dp"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:text="Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/info_name"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginStart="80dp"
+        android:gravity="center"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/info_gender"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="170dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="Healthy?"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/info_gender_header"
+            android:layout_width="76dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="4dp"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:text="Gender" />
+        <RadioButton
+            android:id="@+id/info_gender_male"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:checked="true"
+            android:text="Male" />
+        <RadioButton
+            android:id="@+id/info_gender_female"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:text="Female" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/info_age_header"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="226dp"
+        android:layout_marginEnd="154dp"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:text="Age"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <EditText
+        android:id="@+id/info_age"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="220dp"
+        android:layout_marginStart="80dp"
+        android:gravity="center"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="266dp"
+        android:layout_marginEnd="154dp"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:text="Race/Ethnicity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/info_ethnicity"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="268dp"
+        android:layout_marginStart="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/info_height_header"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="326dp"
+        android:layout_marginEnd="154dp"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:text="Height"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <EditText
+        android:id="@+id/info_height"
+        android:layout_width="90dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginStart="10dp"
+        android:gravity="center"
+        android:ems="10"
+        android:hint="e.g. 5&apos;8&quot;"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <Spinner
+        android:id="@+id/info_height_unit"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="316dp"
+        android:layout_marginStart="180dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/info_weight_header"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="376dp"
+        android:layout_marginEnd="134dp"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:text="Weight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <EditText
+        android:id="@+id/info_weight"
+        android:layout_width="90dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="370dp"
+        android:layout_marginStart="10dp"
+        android:gravity="center"
+        android:ems="10"
+        android:hint="e.g. 150"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/info_weight_unit"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="366dp"
+        android:layout_marginStart="180dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/info_healthy_header"
+        android:layout_width="235dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="424dp"
+        android:text="Any chronic conditions?"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/info_chronic"
+        android:layout_width="240dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="450dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/info_chronic_no"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:checked="true"
+            android:text="No" />
+
+        <RadioButton
+            android:id="@+id/info_chronic_yes"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:text="Yes" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/info_chronic_detail"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="476dp"
+        android:ems="10"
+        android:hint="Input"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/info_remark"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="530dp"
+        android:ems="10"
+        android:hint="Remarks"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/confirm_upload_button"
+        android:layout_width="113dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="580dp"
+        android:text="@string/upload_button"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/upload_progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="630dp"
+        android:indeterminate="false"
+        android:max="100"
+        android:minWidth="200dp"
+        android:minHeight="50dp"
+        android:progress="0"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

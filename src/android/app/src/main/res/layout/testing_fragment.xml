@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:windowBackground"
+    tools:context=".ui.testing.TestingFragment">
+
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/graph"
+        android:layout_width="match_parent"
+        android:layout_height="200dip"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.256" />
+
+    <TextView
+        android:id="@+id/apk_url"
+        android:layout_width="400dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="48dp"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textColor="@color/colorNotActive"
+        android:textSize="12sp"
+        android:autoLink="all"
+        android:text=""
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/record_time"
+        android:layout_width="122dp"
+        android:layout_height="41dp"
+        android:layout_marginBottom="320dp"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textColor="@color/colorNotActive"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/text_test"
+        android:layout_width="350dp"
+        android:layout_height="240dp"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:text="@string/welcome"
+        android:textColor="@color/colorAccent"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_throat"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="240dp"
+        android:layout_marginBottom="320dp"
+        android:text="Throat:"
+        android:textAlignment="gravity"
+        android:gravity="center_horizontal"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ToggleButton
+        android:id="@+id/throat_button"
+        style="@android:style/Widget.Holo.Button.Toggle"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="240dp"
+        android:layout_marginBottom="300dp"
+        android:checked="false"
+        android:textOff="CLOSED"
+        android:textOn="OPEN"
+        android:visibility="invisible"
+        android:enabled="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_trial"
+        android:layout_width="340dp"
+        android:layout_height="90dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="230dp">
+
+        <TextView
+            android:id="@+id/text_select_trial"
+            android:layout_width="330dp"
+            android:layout_height="30dp"
+            android:text="Trials:"
+            android:textAlignment="gravity"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ToggleButton
+            android:id="@+id/trial_1"
+            android:layout_width="60dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="280dp"
+            android:layout_marginBottom="10dp"
+            android:textOff="1"
+            android:textOn="1"
+            android:textSize="18sp"
+            android:enabled="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ToggleButton
+            android:id="@+id/trial_2"
+            android:layout_width="60dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="140dp"
+            android:layout_marginBottom="10dp"
+            android:textOff="2"
+            android:textOn="2"
+            android:textSize="18sp"
+            android:enabled="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ToggleButton
+            android:id="@+id/trial_3"
+            android:layout_width="60dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="10dp"
+            android:textOff="3"
+            android:textOn="3"
+            android:textSize="18sp"
+            android:enabled="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ToggleButton
+            android:id="@+id/trial_4"
+            android:layout_width="60dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="140dp"
+            android:layout_marginBottom="10dp"
+            android:textOff="4"
+            android:textOn="4"
+            android:textSize="18sp"
+            android:enabled="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ToggleButton
+            android:id="@+id/trial_5"
+            android:layout_width="60dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="280dp"
+            android:layout_marginBottom="10dp"
+            android:textOff="5"
+            android:textOn="5"
+            android:textSize="18sp"
+            android:enabled="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/triangle"
+            android:layout_width="20dp"
+            android:layout_height="10dp"
+            android:src="@drawable/triangle"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ToggleButton
+        android:id="@+id/record_button"
+        style="@android:style/Widget.Holo.Button.Toggle"
+        android:layout_width="340dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="164dp"
+        android:checked="false"
+        android:textOff="@string/button_off"
+        android:textOn="@string/button_on"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/add_button"
+        style="@android:style/Widget.Holo.Button.Small"
+        android:layout_width="340dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="164dp"
+        android:text="START A NEW TRIAL"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/continue_button"
+        style="@android:style/Widget.Holo.Button.Small"
+        android:layout_width="340dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="164dp"
+        android:text="START"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/delete_button"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="240dp"
+        android:layout_marginBottom="96dp"
+        android:text="DELETE"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/new_button"
+        android:layout_width="160dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="180dp"
+        android:layout_marginBottom="36dp"
+        android:text="NEW TEST"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/cali_button"
+        android:layout_width="160dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="180dp"
+        android:layout_marginBottom="36dp"
+        android:text="CALIBRATION"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/upload_button"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="240dp"
+        android:layout_marginBottom="96dp"
+        android:text="UPLOAD"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/save_button"
+        android:layout_width="125dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="30dp"
+        android:text="@string/save_button"
+        android:textSize="16sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/results_button"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="96dp"
+        android:text="RESULT"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
