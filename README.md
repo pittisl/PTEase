@@ -33,4 +33,4 @@ src
 |   +-- upper_airway.stl
 ```
 ## Demo Video can be found here:
-https://pitt-my.sharepoint.com/:v:/g/personal/xiy92_pitt_edu/ET98DbR7GFdOrkstJZGB8bAB--k9vrtHA2o6G0cM-BZteg?e=nv15sE
+https://drive.google.com/file/d/1xmYa-4QCGcroQQrfteDYuQvqz49G-79b/view?usp=share_link
