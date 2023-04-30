@@ -27,9 +27,9 @@ src
 |   +-- mouthpiece_90.stl
 |   +-- mouthpiece_100.stl
 +-- realistic: Realistic human airway models
-|   +-- trachea_0.8_connector
-|   +-- trachea_0.9_connector
-|   +-- trachea_connector
+|   +-- trachea_0.8_connector.stl
+|   +-- trachea_0.9_connector.stl
+|   +-- trachea_connector.stl
 |   +-- upper_airway.stl
 ```
 ## Demo Video can be found here:
