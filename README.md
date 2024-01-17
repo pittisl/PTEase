@@ -32,5 +32,8 @@ src
 |   +-- trachea_connector.stl
 |   +-- upper_airway.stl
 ```
+## The dataset and example of using the dataset can be found here:
+https://huggingface.co/datasets/ericyxy98/AWARE
+
 ## Demo Video can be found here:
 https://drive.google.com/file/d/1xmYa-4QCGcroQQrfteDYuQvqz49G-79b/view?usp=share_link
